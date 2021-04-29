@@ -10,7 +10,6 @@ packages
 
 .vscode
 .vs
-Docker/docker-compose.yml
 *.wt
 *.turtle
 Docker/data/db/diagnostic.data/metrics.2021-04-29T04-15-26Z-00000
