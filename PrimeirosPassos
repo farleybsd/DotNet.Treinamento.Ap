@@ -3,3 +3,6 @@ https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.202-windows-x64-i
 
 // subindo o servico
 docker-compose up mongo
+
+// Fluent Vailidator (Instalar no Dominio)
+Install-Package FluentValidator

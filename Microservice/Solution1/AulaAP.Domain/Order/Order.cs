@@ -21,5 +21,10 @@ namespace AulaAP.Domain.Entities
         {
             return DateTime.Now.ToString("ddMMyyyyHHmmss") + new Random().Next(1,99999);
         }
+
+        public override bool IsValid()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

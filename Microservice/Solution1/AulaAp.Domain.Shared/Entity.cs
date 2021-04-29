@@ -4,8 +4,9 @@ using System.Text;
 
 namespace AulaAp.Domain.Shared
 {
-    public class Entity<TId> 
+    public abstract class Entity<TId> 
     {
         public TId Id { get; set; }
+        public abstract bool IsValid();
     }
 }
