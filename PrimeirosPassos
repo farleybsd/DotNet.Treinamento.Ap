@@ -1,0 +1,2 @@
+// subindo o servico
+docker-compose up mongo
