@@ -8,13 +8,13 @@ namespace AulaAP.Domain.Entities
 {
     public class Order : Entity<string>
     {
-        public Order(int orderCode, ICollection<Product> products)
+        public Order(string orderCode, ICollection<Product> products)
         {
             OrderCode = orderCode;
             Products = products;
         }
 
-        public int OrderCode { get; private set; }
+        public string OrderCode { get; private set; }
         public ICollection<Product> Products { get; private set; }
         public decimal TotalValue() => Products.Any() ? Products.Sum(p => p.Value * p.Quantity) : 0;
         public static string GenerateOrderCode()

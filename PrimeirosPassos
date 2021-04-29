@@ -6,3 +6,10 @@ docker-compose up mongo
 
 // Fluent Vailidator (Instalar no Dominio)
 Install-Package FluentValidator
+
+// Fila de pedidos em memoria (installer no Dominio)
+Install-Package MediatR
+
+Install-Package Microsoft.Extensions.DependencyInjection.Abstractions (installer no Dominio)
+
+Install-Package MediatR.Extensions.Microsoft.DependencyInjection (installer no Dominio)
