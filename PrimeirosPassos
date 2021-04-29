@@ -1,2 +1,5 @@
+Projeto usando o dotnet core 5
+https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.202-windows-x64-installer
+
 // subindo o servico
 docker-compose up mongo
