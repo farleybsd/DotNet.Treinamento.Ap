@@ -16,7 +16,7 @@ namespace AulaAp.Infra.Data
         public async Task<Order> FindByOrderCode(string orderCode)
         {
             var products = new List<Product>();
-            products.Add(new Product("Dipirona",10,2));
+            products.Add(new Product(Guid.NewGuid().ToString(),"Dipirona",10,2));
 
             return await Task.FromResult(new Order(Order.GenerateOrderCode(), products));
         }
@@ -25,8 +25,8 @@ namespace AulaAp.Infra.Data
         {
             var orders = new List<Order>();
             var products = new List<Product>();
-            products.Add(new Product("Dipirona", 10, 2));
-            products.Add(new Product("Atadura",3,10));
+            products.Add(new Product(Guid.NewGuid().ToString(), "Dipirona", 10, 2));
+            products.Add(new Product(Guid.NewGuid().ToString(),"Atadura",3,10));
 
             orders.Add(new Order(Order.GenerateOrderCode(), products));
             orders.Add(new Order(Order.GenerateOrderCode(), products));

@@ -11,5 +11,9 @@ Install-Package FluentValidator
 Install-Package MediatR
 
 Install-Package Microsoft.Extensions.DependencyInjection.Abstractions (installer no Dominio)
+Install-Package Microsoft.Extensions.DependencyInjection.Abstractions (installer no Application)
 
 Install-Package MediatR.Extensions.Microsoft.DependencyInjection (installer no Dominio)
+
+// Auto Mapper (installer no Application)
+Install-Package AutoMapper

@@ -4,8 +4,9 @@ namespace AulaAP.Domain.Entities
 {
     public  class Product : Entity<string>
     {
-        public Product(string name, decimal value, int quantity)
+        public Product(string id,string name, decimal value, int quantity)
         {
+            Id = id;
             Name = name;
             Value = value;
             Quantity = quantity;
@@ -17,7 +18,7 @@ namespace AulaAP.Domain.Entities
 
         public override bool IsValid()
         {
-            throw new System.NotImplementedException();
+            return true;
         }
     }
 }
